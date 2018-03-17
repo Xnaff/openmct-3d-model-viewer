@@ -1,0 +1,26 @@
+{
+  "name": "3d-model-viewer",
+  "version": "0.0.1",
+  "description": "3D Model Viewer for Open MCT",
+  "author": "Xnaff",
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "html-loader": "^0.5.5",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.1",
+    "three": "^0.91.0",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "vue": "^2.5.16",
+    "webpack": "^3.11.0"
+  }
+}
