@@ -19,7 +19,7 @@ available as `Openmct3dModelViewerPlugin`.
 
 Insert the `openmct-3d-model-viewer.js` from the `dist` directory in the `head` of your `index.html`.
 ```
-<script src="< path to the direktory you cloned this plugin >/openmct-3d-model-viewer/dist/openmct-3d-model-viewer.js"></script>
+<script src="< path to the directory you cloned this plugin >/openmct-3d-model-viewer/dist/openmct-3d-model-viewer.js"></script>
 ```
 Then install the plugin in `openmct` 
 ```
