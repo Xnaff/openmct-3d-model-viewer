@@ -1,11 +1,27 @@
 # Open MCT 3D Model Viewer
 
-This plugin displays a 3D model in Open MCT. During development of this plugin the Open MCT software was still undergoing some changes so the description may not work. I try to keep the description up to date. If you encounter problems feel free to create an issue. 
+A plugin for [Open MCT](https://nasa.github.io/openmct) adding a 3d geometry visualization of gyroscope telemetry data. You can use the telemetry data roll (x-axis), pitch (y-axis) and yaw (z-axis) of your spacecraft to use this plugin.
 
-## Getting Started
+## Build
 
-1. From the root directory of Open MCT clone this repository in any directory of your liking. In this description we will use ./example/
+```bash
+$ git clone https://github.com/Xnaff/openmct-3d-model-viewer.git
+$ cd openmct-3d-model-viewer
+$ npm install
+$ npm run build
+```
 
-`git clone https://github.com/Xnaff/openmct-3d-model-viewer.git`
+A UMD module with associated source maps will be written to the
+`dist` directory. When installed as a global, the plugin will be
+available as `Openmct3dModelViewerPlugin`.
 
-2. Register the plugin in ./src/defaultRegistry.js "In the documentation of Open MCT ther should be a bundles.json this json file is missing. I created an issue in Open MCT about it"
+## Usage
+
+Insert the `openmct-3d-model-viewer.js` from the `dist` directory in the `head` of your `index.html`.
+```
+<script src="< path to the direktory you cloned this plugin >/openmct-3d-model-viewer/dist/openmct-3d-model-viewer.js"></script>
+```
+Then install the plugin in `openmct` 
+```
+openmct.install(Openmct3dModelViewerPlugin());
+```
