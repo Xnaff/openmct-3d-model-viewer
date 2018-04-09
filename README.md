@@ -1,6 +1,6 @@
 # Open MCT 3D Model Viewer
 
-A plugin for [Open MCT](https://nasa.github.io/openmct) adding a 3d geometry visualization of gyroscope telemetry data. You can use the telemetry data roll (x-axis), pitch (y-axis) and yaw (z-axis) of your spacecraft to use this plugin.
+A plugin for [Open MCT](https://nasa.github.io/openmct) adding a 3d geometry visualization of imu telemetry data. You can use the telemetry data roll (x-axis), pitch (y-axis) and yaw (z-axis) of your spacecraft to use this plugin.
 
 ## Build
 

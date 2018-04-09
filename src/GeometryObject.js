@@ -43,12 +43,23 @@ define([
         this.renderer.render(this.scene, this.camera);
     }
 
-    GeometryObject.prototype.animate = function () {
-        requestAnimationFrame(this.animate);
+    GeometryObject.prototype.updateX = function (x) {
 
-        this.cube.rotation.x += 0.0065;
-        //cube.rotation.y += 0.0065;
-        //cube.rotation.z += 0.0065;
+        this.cube.rotation.x = x;
+
+        this.renderer.render(this.scene, this.camera);
+    }
+
+    GeometryObject.prototype.updateY = function (y) {
+
+        this.cube.rotation.y = y;
+
+        this.renderer.render(this.scene, this.camera);
+    }
+
+    GeometryObject.prototype.updateZ = function (z) {
+
+        this.cube.rotation.z = z;
 
         this.renderer.render(this.scene, this.camera);
     }

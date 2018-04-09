@@ -12,7 +12,35 @@ define([
                 name: '3D Model Viewer',
                 cssClass: 'icon-object',
                 description: 'Display a 3D Model.',
-                creatable: true
+                creatable: true,
+                initialize: function (obj) {
+                },
+                form: [
+                    {
+                        key: "roll",
+                        name: "Roll",
+                        control: "textfield",
+                        required: true
+                    },
+                    {
+                        key: "pitch",
+                        name: "Pitch",
+                        control: "textfield",
+                        required: true
+                    },
+                    {
+                        key: "yaw",
+                        name: "Yaw",
+                        control: "textfield",
+                        required: true
+                    },
+                    {
+                        key: "namespace",
+                        name: "Namespace",
+                        control: "textfield",
+                        required: true
+                    },
+                ]
             });
 
             (openmct.mainViews || openmct.objectViews).addProvider({
